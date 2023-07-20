@@ -1,0 +1,293 @@
+/*
+
+Salut Davy voici mon code j'éspère qu'il vas aider sur se projet
+prépare des doliprames au cas ou ?
+
+*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, a {
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	color: #454545; 
+}
+
+section {
+	display: flex;
+	height: 100%;
+}
+
+.color-1 {
+	color: #d31d53;
+}
+
+a {
+	text-decoration: none;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;	height: 45px;
+    width: 180px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #454545;
+    color: white;  
+}
+
+.button-2 {
+	font-style: italic;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45px;
+    width: 150px;
+    background-color: white;
+	border: 3px solid black;
+	text-decoration: none;
+	background-color: #454545;	
+	color: white;
+}
+
+/* partie gauche */
+
+.left {
+	height: 100vh;
+	width: 25%;
+	margin: 0 auto;
+	background-color: #FAFAFA;
+
+}
+
+
+.left div {
+	display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 30px 80px;
+
+}
+
+.left div h2 {
+	height: 100px
+}
+
+.left ul {
+	list-style-type: none;
+}
+
+.left ul li {
+	font-size: 20px;
+	margin-bottom: 50px;
+
+}
+
+.left ul li a{
+	text-decoration: none;
+	color: none;
+	color: #454545;
+	
+}
+
+.left ul li a:hover{
+	color: #d31d53;
+}
+
+/* partie droite */	
+
+.right {
+	width: 75%;
+}
+
+.right-div-1 {
+	display: flex;
+    justify-content: flex-end;
+    margin: 50px 50px;
+}
+
+.right-div-1 a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    
+}
+
+.right-div-col-1 {
+	display: flex;
+	padding: 0 50px;
+}
+
+.right-div-col-1 img{
+	height: 600px;
+	width: auto;
+	margin: 0 50px 120px 0;
+    box-shadow: 0px 0px 15px 0px #0000003b;
+}
+
+.right-div-col-1-col-1 {
+	width: 100%;
+}
+
+.right-div-col-1-col-1 div{
+	border-radius: 10px;
+}
+
+.right-div-col-1-col-1-row-1 {
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 30px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.right-div-col-1-col-1-row-2 {
+	display: flex;
+	height: 140px;
+	width: 100%;
+	margin: 0 0 20px 0;
+	box-shadow: 0px 0px 15px 0px #0000003b;
+	}
+
+.right-div-col-1-col-1-row-2 ul {
+	list-style-type: none;
+}
+
+.right-div-col-1-col-1-row-2 ul li:nth-child(1){
+	font-size: 20px;
+	text-align:center;
+}
+
+.right-div-col-1-col-1-row-2 ul li:nth-child(2){
+	font-size: 70px;
+	text-align:center;
+	font-weight: bold;
+}
+
+.right-div-col-1-col-1-row-2 div{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.background-green{
+	border-radius: 10px;
+    background: rgb(0,255,3);
+	background: linear-gradient(90deg, rgba(1,163,28,1) 6%, rgba(0,212,255,0) 6%);
+}
+
+.background-red{
+	border-radius: 10px;
+    background: rgb(255,0,0);
+	background: linear-gradient(90deg, rgba(237,51,72,1) 6%, rgba(0,212,255,0) 6%);
+}
+
+.right-div-col-1-col-1-row-2 div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.responsive {
+	display: none;
+}
+
+footer {
+	height: 100px;
+	background-color: #d31d53;
+}
+
+
+/****************************** RESPONSIVE ***********************************/
+
+/*
+
+V. mobile :
+
+bonjour Davy, J -52 (meme ligne)
+ils viennent 
+Ils ne viennetn pas
+video
+telecharger la video
+un probleme ?
+
+
+
+
+*/
+
+@media screen and (max-width: 900px) {
+
+	article{
+		display: none;
+	}
+
+
+	.responsive {
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+	}
+
+	.responsive article{
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+	}
+
+	.responsive-article-div-1 {
+		display: flex;
+		justify-content: space-between;
+		margin: 25px 10px;
+	}
+
+	.responsive-article-div-2 {
+		margin: 25px 0;
+		
+	}
+
+	.right-div-col-1-col-1-row-2 {
+		border-radius: 10px;
+	}
+
+	.responsive-article-div-3 {
+		margin: 25px 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	.responsive-article-div-3 img{
+		width: 80vw;
+	}
+
+	.responsive-article-div-4 p{
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.responsive-article-div-5{
+		display: flex;
+		justify-content: center;
+		margin: 25px 0;
+	}
+
+	.responsive-article-div-5 a{
+		
+	}
+
+
+	
+}
